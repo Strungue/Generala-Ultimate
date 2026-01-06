@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GeneralaUltimate - Conexión</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div class="center-wrap">
+    <div class="card">
+      <h1 class="text-center login-title">LOGIN</h1>
+
+      <div class="input-row">
+        <label for="nick">Nick (único)</label>
+        <input id="nick" type="text" placeholder="Tu nick" />
+      </div>
+
+      <!-- 🔹 Selector de avatar (los botones se generan en login.js) -->
+      <div class="input-row">
+        <label>Elige tu avatar</label>
+        <div id="avatarGrid" class="avatar-grid"></div>
+      </div>
+
+      <!-- Botón centrado -->
+      <button id="connectBtn" class="button-blue">Conectar</button>
+
+      <!-- Mensaje centrado y rojo -->
+      <p id="msg" class="small"></p>
+    </div>
+  </div>
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+  <script src="login.js"></script>
+</body>
+
+</html>

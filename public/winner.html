@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yahtzee/Generala – Ganador</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="winner-container">
+    <div class="winner-header">
+      <h1 class="winner-title">🎉 ¡GANADOR! 🎉</h1>
+      <h2 class="winner-name" id="winnerName"></h2>
+      <img class="winner-avatar" id="winnerAvatar" alt="Avatar del ganador">
+    </div>
+
+    <div class="score-display">
+      <div class="score-label">Puntuación Total</div>
+      <div class="score-value" id="winnerScore">0</div>
+    </div>
+
+    <div class="flex-gap-center">
+      <button class="button-blue" id="playAgainBtn" style="display:none">Jugar de nuevo</button>
+      <button class="button-blue" id="selectGameBtn" style="display:none">Seleccionar modalidad</button>
+      <button class="button-red" id="backBtn">Salir</button>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="winner.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yahtzee/Generala – Juego</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- 🔹 Panel superior de jugadores centrado -->
+  <div class="panel" id="topPlayers"></div>
+
+  <!-- 🔹 Layout principal: opciones | dados | score -->
+  <div id="mainLayout" class="layout-centered">
+    <!-- Opciones de puntuación - Izquierda -->
+    <div id="options-panel">
+      <h3 style="text-align: center;">OPTIONS</h3>
+      <table class="score-table" id="scoreTable">
+        <thead>
+          <tr>
+            <th class="cat">Categoría</th>
+            <th class="pts">Puntos</th>
+          </tr>
+        </thead>
+        <tbody id="optionsBody"></tbody>
+      </table>
+    </div>
+
+    <!-- Panel de dados y controles - Centro -->
+    <div id="dicePanel" class="panel">
+      <div class="dice-area">
+        <div class="dice-grid" id="diceRow">
+          <div class="grid-cell" id="cell-1"></div>
+          <div class="grid-cell" id="cell-2"></div>
+          <div class="grid-cell" id="cell-3"></div>
+          <div class="grid-cell" id="cell-4"></div>
+          <div class="grid-cell" id="cell-5"></div>
+          <div class="grid-cell" id="cell-6"></div>
+          <div class="grid-cell" id="cell-7"></div>
+          <div class="grid-cell" id="cell-8"></div>
+          <div class="grid-cell" id="cell-9"></div>
+        </div>
+
+        <div class="flex-gap-center">
+          <button id="rollBtn" class="roll-button button-blue">Tirar</button>
+        </div>
+
+        <div class="roll-icons">
+          <div class="roll-icon active" id="roll-1"></div>
+          <div class="roll-icon" id="roll-2"></div>
+          <div class="roll-icon" id="roll-3"></div>
+        </div>
+
+        <!--<p id="gameMsg" class="small"></p>-->
+      </div>
+    </div>
+
+    <!-- Planilla - Derecha -->
+    <div id="planilla-container">
+      <h3 style="text-align: center;">SCORE</h3>
+    </div>
+  </div>
+
+
+  <!-- Título en el pie, compacto -->
+  <div class="panel footer-title" id="footerTitle">
+    <h1>GENERALA ULTIMATE</h1>
+    <h2 id="labelGameMode"></h2>
+  </div>
+  
+  <button id="newGameBtn" class="button-blue" style="margin-left: auto; margin-right: auto; width: fit-content;">Nuevo</button>
+  <button id="exitBtn" class="button-red">Salir</button>
+
+  <!-- Scripts -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yahtzee/Generala – Juego</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="center-wrap">
+    <div id="gameOptions" class="card-fit">
+      
+      <!-- MODALIDAD -->
+      <h3 style="margin: 0px; text-align: left;">Modalidad:</h3>
+      <select class="button_style" id="modoJuego">
+        <option>NORMAL</option>
+        <option>ORDENADA</option>
+        <option>ORDENADA INVERSA</option>
+      </select>
+      
+      <!-- ABAJOS -->
+      <h3 style="margin: 0px; margin-top: 8px; text-align: left;">Abajos</h3>
+      <select class="button_style" id="abajos">
+        <option>SIN ABAJOS</option>
+        <option>1 DADO</option>
+        <option>2 DADOS</option>
+        <option>3 DADOS</option>
+      </select>
+
+      <!-- Checkbox + label en línea -->
+      <div>
+        <input type="checkbox" id="abajosObligados" name="opciones" value="con_abajos">
+        <label for="abajosObligados">Obligados</label>
+      </div>
+
+      <div style="margin-top:32px; text-align:center;">
+        <button id="startBtn" class="button-blue">Iniciar partida</button>
+      </div>
+      <div style="text-align: center; margin-top: 4px;">
+        <button id="logoutBtn" class="button-red">Logout</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="new_game.js"></script>
+</body>
+
+</html>

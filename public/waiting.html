@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yahtzee/Generala – Esperando</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="full-center-vertical">
+    <div class="waiting-message">WAITING GAME TO START...</div>
+    <div class="player-info" id="playerInfo"></div>
+
+    <button id="logoutBtn" class="button-red" style="margin-top: 64px;">Logout</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="waiting.js"></script>
+</body>
+
+</html>

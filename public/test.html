@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Grilla de Dados</title>
+  <!--<link rel="stylesheet" href="styles.css">-->
+</head>
+<style>
+  .test-grid {
+    width: 100vw;
+    height: 100vh;
+    /*display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;*/
+  }
+
+  .test-cell1 {
+    border: 2px solid #00ff3c;
+  }
+
+  .img-fit {
+    max-width: 80%;
+    max-height: 80%;
+  }
+</style>
+<body style="background: radial-gradient(1000px 600px at 70% 10%, #1b2140, #0f1220);">
+
+  <table style="margin-left: auto; margin-right: auto; text-align: center; color: #00ff3c;">
+    <tr>
+      <td class="test-cell1"><img src="img/6.png" class="img-fit"></td>
+      <td class="test-cell1">2</td>
+      <td class="test-cell1"><img src="img/5.png" class="img-fit"></td>
+    </tr>
+    <tr>
+      <td class="test-cell1">4</td>
+      <td class="test-cell1"><img src="img/4.png" class="img-fit"></td>
+      <td class="test-cell1">6</td>
+    </tr>
+    <tr>
+      <td class="test-cell1"><img src="img/3.png" class="img-fit"></td>
+      <td class="test-cell1">8</td>
+      <td class="test-cell1"><img src="img/2.png" class="img-fit"></td>
+    </tr>
+  </table>
+
+  <div class="test-grid">
+    <!-- Celda 1 -->
+    <div class="test-cell">
+      <img src="img/6.png" class="img-fit">
+      <!--<span class="number">1</span>
+      <span class="dice">🎲</span>-->
+    </div>
+
+    <!-- Celda 2 -->
+    <div class="test-cell">    </div>
+
+    <!-- Celda 3 -->
+    <div class="test-cell">
+      <img src="img/5.png" class="img-fit">
+      <!--<span class="number">3</span>
+      <span class="dice">🎲</span>-->
+    </div>
+
+    <!-- Celda 4 -->
+    <div class="test-cell">    </div>
+
+    <!-- Celda 5 -->
+    <div class="test-cell">
+      <img src="img/4.png" class="img-fit">
+      <!--<span class="number">5</span>
+      <span class="dice">🎲</span>-->
+    </div>
+
+    <!-- Celda 6 -->
+    <div class="test-cell">    </div>
+
+    <!-- Celda 7 -->
+    <div class="test-cell">
+      <img src="img/3.png" class="img-fit">
+      <!--<span class="number">7</span>
+      <span class="dice">🎲</span>-->
+    </div>
+
+    <!-- Celda 8 -->
+    <div class="test-cell">    </div>
+
+    <!-- Celda 9 -->
+    <div class="test-cell">
+      <img src="img/2.png" class="img-fit">
+      <!--<span class="number">9</span>
+      <span class="dice">🎲</span>-->
+    </div>
+  </div>
+
+</body>
+
+</html>
