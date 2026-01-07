@@ -16,18 +16,7 @@
   <!-- 🔹 Layout principal: opciones | dados | score -->
   <div id="mainLayout" class="layout-centered">
     <!-- Opciones de puntuación - Izquierda -->
-    <div id="options-panel">
-      <h3 style="text-align: center;">OPTIONS</h3>
-      <table class="score-table" id="scoreTable">
-        <thead>
-          <tr>
-            <th class="cat">Categoría</th>
-            <th class="pts">Puntos</th>
-          </tr>
-        </thead>
-        <tbody id="optionsBody"></tbody>
-      </table>
-    </div>
+    
 
     <!-- Panel de dados y controles - Centro -->
     <div id="dicePanel" class="panel">
@@ -57,13 +46,29 @@
         <!--<p id="gameMsg" class="small"></p>-->
       </div>
     </div>
-
-    <!-- Planilla - Derecha -->
-    <div id="planilla-container">
-      <h3 style="text-align: center;">SCORE</h3>
-    </div>
+    
   </div>
 
+  <div id="scorePanel" class="layout-centered">
+  <div id="options-panel">
+      <h3 style="text-align: center;">OPTIONS</h3>
+      <table class="score-table" id="scoreTable">
+        <thead>
+          <tr>
+            <th class="cat">Categoría</th>
+            <th class="pts">Puntos</th>
+          </tr>
+        </thead>
+        <tbody id="optionsBody"></tbody>
+      </table>
+    </div>
+
+  <!-- Planilla - Derecha -->
+
+  <div id="planilla-container">
+      <h3 style="text-align: center;">SCORE</h3>
+    </div>
+</div>
 
   <!-- Título en el pie, compacto -->
   <div class="panel footer-title" id="footerTitle">
