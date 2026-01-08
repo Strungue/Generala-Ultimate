@@ -150,7 +150,7 @@ function renderDice() {
   const hasRolled = started && state.rolls > 0;
 
   // Desired positions for the five dice: cells 1,3,5,7,9
-  const positions = [1, 3, 5, 7, 9];
+  const positions = [1, 2, 3, 4, 5];
 
   state.dice.forEach((v, i) => {
     const displayVal = hasRolled ? v : 0;
